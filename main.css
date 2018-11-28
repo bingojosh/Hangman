@@ -1,0 +1,11 @@
+body{
+    background: url(./assets/graphy.png) repeat;
+}
+
+.keyboard{
+    text-align: center;
+}
+
+.inline{
+    display: inline;
+}
