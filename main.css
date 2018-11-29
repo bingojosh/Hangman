@@ -9,3 +9,8 @@ body{
 .inline{
     display: inline;
 }
+
+#start{
+    top: 45%;
+    right: 46%;
+}
