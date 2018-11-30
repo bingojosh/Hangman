@@ -10,10 +10,10 @@ var wordList = [
     ['diagram', 'subject'],
 ];
 
-console.log(wordList);
+// console.log(wordList);
 
 $(document).ready(function(){
-
+    var arr, underline;
     $("#q").click(function(){
         $("#hangman").attr("src", "assets/Hangman-1.png");
     });
@@ -27,14 +27,20 @@ $(document).ready(function(){
     }
 
     function start(){
-        $("#underline").text("_ ");
-        var arr = wordSelect();
-        for(var i=0; i<arr[0].length, i++;){
-            $("#underline").append("<p>_ </p>");
-        }
+        underline = [];
+        arr = wordSelect();
+        console.log(arr[0].length);
+        for(var i=0; i<arr[0].length; i++){
+            underline.push("_ ");
+            console.log(i);
+        };
+        $("#underline").text(underline.join(" "));
         $("#clue").text("Clue: " + arr[1]);
     }
 
+    $(".key").onclick = function(){
+        
+    }
     $("#start").click(function(){
         $(this).hide();
         start();
