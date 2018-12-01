@@ -13,4 +13,14 @@ body{
 #start{
     top: 45%;
     right: 46%;
+    z-index: 1000;
+}
+
+#underline, #clue, #guessdiv{
+    font-size: 40px;
+    padding: 20px;
+}
+
+#word{
+    text-align: center;
 }
